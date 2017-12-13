@@ -6,6 +6,10 @@ function setup() {
   speechRec.start();
 
   function gotSpeech() {
-    console.log(speechRec);
+    if(speechRec.resultValue){
+      createP(speechRec.resultString);
+    }
   }
 }
+
+  
